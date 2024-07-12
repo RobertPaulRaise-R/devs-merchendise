@@ -5,3 +5,43 @@
 html {
   font-family: "JetBrains Mono", monospace;
 }
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+
+  background-color: #cacaca;
+}
+
+/* ::-webkit-scrollbar:horizontal {
+  display: none;
+} */
+
+.profile {
+  position: relative;
+  overflow: hidden;
+}
+
+.profile::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #78716c;
+  border-radius: 50%;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.profile::after {
+  content: "";
+  width: 30px;
+  height: 25px;
+  background-color: #78716c;
+  border-radius: 80%;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}

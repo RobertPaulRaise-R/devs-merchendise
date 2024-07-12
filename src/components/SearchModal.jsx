@@ -22,6 +22,7 @@ function SearchModal({ callback }) {
                 <div className="mt-3 flex items-center gap-3 sm:ml-4 sm:mt-0 sm:text-left">
                   <input
                     type="text"
+                    placeholder="Search developers..."
                     className="border border-black px-3 py-2 outline-none"
                   />
                   <Link
