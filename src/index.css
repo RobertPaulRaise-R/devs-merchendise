@@ -6,16 +6,27 @@ html {
   font-family: "JetBrains Mono", monospace;
 }
 
-::-webkit-scrollbar {
-  height: 5px;
+body::-webkit-scrollbar {
   width: 8px;
-
-  background-color: #cacaca;
 }
 
-/* ::-webkit-scrollbar:horizontal {
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(170, 170, 170);
+  border-radius: 10px;
+}
+
+/* *::-webkit-scrollbar:horizontal {
+  width: 1px;
   display: none;
 } */
+
+*::-webkit-scrollbar:horizontal {
+  display: none;
+}
 
 .profile {
   position: relative;

@@ -49,8 +49,11 @@ function Navbar() {
           <GiCardboardBox size={26} />
         </Link>
 
-        <Link to="cart" className="p-1.5 hover:bg-stone-300">
+        <Link to="cart" className="relative p-1.5 hover:bg-stone-300">
           <BsCart4 size={26} />
+          <div className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full bg-black p-1 text-[10px] text-white">
+            1
+          </div>
         </Link>
 
         {isLoggedIn ? (

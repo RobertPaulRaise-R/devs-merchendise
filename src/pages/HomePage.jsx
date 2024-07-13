@@ -1,4 +1,5 @@
 import ImgCarousel from "../components/ImgCarousel";
+import MayBeIntrested from "../components/MayBeIntrested";
 import Product from "../components/Product";
 
 function HomePage() {
@@ -6,9 +7,10 @@ function HomePage() {
     <div>
       <div className="h-72 w-full">
         <ImgCarousel />
-        <div className="mt-10 flex gap-10">
+        <div className="mt-10 flex justify-center">
           <Product />
         </div>
+        <MayBeIntrested />
       </div>
     </div>
   );
